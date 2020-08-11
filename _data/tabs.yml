@@ -19,14 +19,15 @@
   path: tabs
   url: tags
 -
-  name: "Test"
-  icon: "fas fa-github"
-  link: "https://github.com/maximegault"
+  name: "Links"
+  icon: "fas fa-link"
+  path: "tabs"
+  url: "links"
 #-
 #   name: "Archives"
+#   icon: "fas fa-archive"
 #   path: tabs
 #   url: archives
-#   icon: "fas fa-archive"
 # -
 #   name: "About"
 #   icon: "fas fa-info"
