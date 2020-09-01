@@ -1,11 +1,11 @@
 ---
 title: Path operations
 date: 2020-08-07 16:00:00 HH:MM:SS +0200
-categories: [Development]
-tags: [powershell]     # TAG names should always be lowercase
+categories: [Development, PowerShell]
+tags: [development, powershell]     # TAG names should always be lowercase
 ---
 
-## Joining two paths
+### Joining two paths
 ```powershell
 $basePath = 'C:\foo'
 $firstChildPath = 'bar'
@@ -16,7 +16,7 @@ $pipedFullPath = Join-Path $basePath -ChildPath $firstChildPath | Join-Path -Chi
 # pipedFullPath is 'C:\foo\bar\baz'
 ```
 
-## Get parent path
+### Get parent path
 ```powershell
 $fullPath = 'C:\foo\bar\baz'
 $parentPath = Split-Path $fullPath -Parent
@@ -25,14 +25,14 @@ $pipedParentPath = Split-Path $fullPath -Parent | Split-Path -Parent
 # pipedParentPath is 'C:\foo'
 ```
 
-## Get leaf
+### Get leaf
 ```powershell
 $fullPath = 'C:\foo\bar\baz'
 $leaf = Split-Path $fullPath -Leaf
 # leaf is 'baz'
 ```
 
-## Mix everything
+### Mix everything
 ```powershell
 $fullPath = 'C:\foo\bar\baz'
 $anotherLeaf = 'qux'
