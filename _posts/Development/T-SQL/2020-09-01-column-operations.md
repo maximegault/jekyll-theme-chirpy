@@ -9,6 +9,7 @@ tags: [development, t-sql, sqlserver, database, column]
 ```sql
 ALTER TABLE [MySchema].[MyTable]
 ADD [MyColumn] [bit] NULL
+GO
 ```
 
 ### Drop a column from an existing table
@@ -16,6 +17,7 @@ ADD [MyColumn] [bit] NULL
 -- Don't forget to drop constraints first if needed
 ALTER TABLE [MySchema].[MyTable]
 DROP COLUMN [MyColumn]
+GO
 ```
 
 ### Example: create a bit column that needs to be non nullable and to have a default 0 value
@@ -23,6 +25,7 @@ DROP COLUMN [MyColumn]
 -- The column needs to be nullable first
 ALTER TABLE [MySchema].[MyTable]
 ADD [MyColumn] [bit] NULL
+GO
 
 ALTER TABLE [MySchema].[MyTable] ADD CONSTRAINT [DF_MyTable_MyColumn] DEFAULT ((0)) FOR [MyColumn]
 GO
@@ -35,4 +38,5 @@ GO
 -- And finally set the column non nullable
 ALTER TABLE [MySchema].[MyTable]
 ALTER COLUMN [MyColumn] [bit] NOT NULL
+GO
 ```
