@@ -1,5 +1,5 @@
 ---
-title: Column operations
+title: Various system informations
 date: 2020-09-15 10:30:00 HH:MM:SS +0200
 categories: [System, Linux]
 tags: [system, linux, shell, version, python]
