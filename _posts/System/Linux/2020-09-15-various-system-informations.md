@@ -6,7 +6,7 @@ tags: [system, linux, shell, version, python]
 ---
 
 ### Know the distribution name and version
-A way :
+A way:
 ```shell
 cat /etc/*-release
 ```
@@ -24,7 +24,7 @@ CPE_NAME="cpe:/o:redhat:enterprise_linux:8.2:GA"
 HOME_URL="https://www.redhat.com/"
 BUG_REPORT_URL="https://bugzilla.redhat.com/"
 ```
-Another way :
+Another way:
 ```shell
 hostnamectl
 ```
@@ -43,7 +43,7 @@ Output example:
 ```
 
 ### Know the installed Python version
-A way :
+A way:
 ```shell
 python --version
 ```
@@ -51,7 +51,7 @@ Output example:
 ```
 python 2.0.0
 ```
-Another way :
+Another way:
 ```shell
 python -V
 ```
