@@ -10,7 +10,7 @@
 
 title: Wow!                          # the main title
 
-tagline: Much things  # it will display as the sub-title
+tagline: Personal notepad  # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
   Personal notes with things I need to remember

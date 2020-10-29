@@ -7,3 +7,6 @@ title: Links
 * [EPEL](https://fedoraproject.org/wiki/EPEL)
 * [SSH](https://www.ssh.com/ssh/)
 * [JWT.IO](https://jwt.io/)
+* Regex:
+  * [regex101](https://regex101.com/)
+  * [Regex Numeric Range Generator](http://gamon.webfactional.com/regexnumericrangegenerator/)

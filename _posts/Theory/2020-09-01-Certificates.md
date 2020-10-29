@@ -1,5 +1,5 @@
 ---
-title: Certificates
+title: Certificates theory
 date: 2020-09-01 17:00:00 HH:MM:SS +0200
 categories: [Theory]
 tags: [theory, certificate]
