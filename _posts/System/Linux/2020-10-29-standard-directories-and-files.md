@@ -1,5 +1,5 @@
 ---
-title: Path operations
+title: Standard directories and files
 date: 2020-10-29 11:30:00 HH:MM:SS +0100
 categories: [System, Linux]
 tags: [system, linux, shell, ssh, standard]

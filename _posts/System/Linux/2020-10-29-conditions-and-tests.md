@@ -10,9 +10,12 @@ tags: [system, linux, shell, tests, conditions]
 * `-e` returns true if a file exists
 * `-o` perform a logical or between two tests
 * `-z` returns true if the given command returns an empty string
+* `-L` checks if a symlink exists
 ```shell
 if [ -z "`grep "DIRECTORY" /etc/sudoers`" ]
 ```
+[GNU conditions manpage](https://linux.die.net/man/1/test)
+[BSD conditions manpage](https://www.freebsd.org/cgi/man.cgi?test)
 [More conditions](https://fr.wikibooks.org/wiki/Programmation_Bash/Tests)
 
 ### Test command
