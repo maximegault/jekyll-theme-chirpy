@@ -21,12 +21,25 @@ We can add the `--show-origin` argument to see the file's location:
 ```shell
 git config --list
 ```
+List the global values only:
+```shell
+git config --global --list
+```
+List the local values only:
+```shell
+git config --local --list
+```
 ### Add a config value
 Example adding a user name (name is a property of the user's section) in the global section:
 ```shell
 git config --global user.name Maxime Gault
 ```
 
+### Remove a config value
+A global one:
+```shell
+git config --global --unset http.sslBackend
+```
 A value can be configured in several files, the last one is used.
 
 More info on [official website](https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration)
