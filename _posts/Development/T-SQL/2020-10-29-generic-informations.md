@@ -6,7 +6,9 @@ tags: [development, t-sql, sqlserver, database, column]
 ---
 
 ### List tables from the current database
+
 Note that there is a lot of ways to achieve this.
+
 ```sql
 SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE'
 ```

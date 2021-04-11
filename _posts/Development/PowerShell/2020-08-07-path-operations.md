@@ -6,6 +6,7 @@ tags: [development, powershell]     # TAG names should always be lowercase
 ---
 
 ### Joining two paths
+
 ```powershell
 $basePath = 'C:\foo'
 $firstChildPath = 'bar'
@@ -17,6 +18,7 @@ $pipedFullPath = Join-Path $basePath -ChildPath $firstChildPath | Join-Path -Chi
 ```
 
 ### Get parent path
+
 ```powershell
 $fullPath = 'C:\foo\bar\baz'
 $parentPath = Split-Path $fullPath -Parent
@@ -26,6 +28,7 @@ $pipedParentPath = Split-Path $fullPath -Parent | Split-Path -Parent
 ```
 
 ### Get leaf
+
 ```powershell
 $fullPath = 'C:\foo\bar\baz'
 $leaf = Split-Path $fullPath -Leaf
@@ -33,6 +36,7 @@ $leaf = Split-Path $fullPath -Leaf
 ```
 
 ### Mix everything
+
 ```powershell
 $fullPath = 'C:\foo\bar\baz'
 $anotherLeaf = 'qux'

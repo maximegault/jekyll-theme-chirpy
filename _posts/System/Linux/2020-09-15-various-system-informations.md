@@ -6,12 +6,16 @@ tags: [system, linux, shell, version, python]
 ---
 
 ### Know the distribution name and version
+
 A way:
+
 ```shell
 cat /etc/*-release
 ```
+
 Output example:
-```
+
+```text
 NAME="Red Hat Enterprise Linux"
 VERSION="8.2 (Ootpa)"
 ID="rhel"
@@ -24,12 +28,16 @@ CPE_NAME="cpe:/o:redhat:enterprise_linux:8.2:GA"
 HOME_URL="https://www.redhat.com/"
 BUG_REPORT_URL="https://bugzilla.redhat.com/"
 ```
+
 Another way:
+
 ```shell
 hostnamectl
 ```
+
 Output example:
-```
+
+```text
    Static hostname: myHostName
          Icon name: computer-vm
            Chassis: vm
@@ -43,19 +51,27 @@ Output example:
 ```
 
 ### Know the installed Python version
+
 A way:
+
 ```shell
 python --version
 ```
+
 Output example:
-```
+
+```text
 python 2.0.0
 ```
+
 Another way:
+
 ```shell
 python -V
 ```
+
 Output example:
-```
+
+```text
 python 3.0.0
 ```
