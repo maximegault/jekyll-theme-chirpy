@@ -35,3 +35,14 @@ Locate the `defaultProfile` line and set its value with the needed terminal GUID
 ```
 
 Hint: [get a GUID](https://duckduckgo.com/?q=guid&t=ironbrowser&ia=answer)
+
+### Change the distribution and the user to open the WSL with
+
+In the WSL entry, change the `commandline` parameter value:
+
+* `-d`: the distribution's name
+* `-u`: the user's name
+
+```json
+{ "commandline": "wsl -d distributionName -u userName" }
+```
