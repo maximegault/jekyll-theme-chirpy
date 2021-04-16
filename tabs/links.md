@@ -2,11 +2,18 @@
 title: Links
 ---
 
-* [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
-* [Git reference](https://git-scm.com/docs)
-* [EPEL](https://fedoraproject.org/wiki/EPEL)
-* [SSH](https://www.ssh.com/ssh/)
-* [JWT.IO](https://jwt.io/)
+* References:
+  * [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+  * [Git reference](https://git-scm.com/docs)
 * Regex:
   * [regex101](https://regex101.com/)
   * [Regex Numeric Range Generator](http://gamon.webfactional.com/regexnumericrangegenerator/)
+* Generic tools:
+  * [JSON formatter and validator](https://jsonformatter.curiousconcept.com/)
+  * [YAML formatter](https://jsonformatter.org/yaml-formatter)
+  * [JWT.IO - decode, verify and generate JWT](https://jwt.io/)
+  * [PDF tools - compress, convert, split, etc.](https://smallpdf.com/fr/logiciels-pdf)
+  * [Emoji list to copy/paste](https://getemoji.com/)
+* Misc:
+  * [EPEL](https://fedoraproject.org/wiki/EPEL)
+  * [SSH](https://www.ssh.com/ssh/)
