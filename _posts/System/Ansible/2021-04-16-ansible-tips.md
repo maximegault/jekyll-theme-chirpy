@@ -31,4 +31,18 @@ On a target host called `myMachine.myDomain.com`:
 
 * `ansible_hostname` = `myMachine`
 * `ansible_fqdn` = `myMachine.myDomain.com`
+
+### Magic variables
+
+On a target host called `myMachine.myDomain.com`:
+
+* `inventory_hostname_short` = `myMachine`
 * `inventory_hostname` = `myMachine.myDomain.com`
+
+[Magic variables vs. facts](https://docs.ansible.com/ansible/latest/user_guide/playbooks_vars_facts.html#)
+
+### Special variables
+
+Magic variables + classic facts = special variables
+
+[Special variables reference](https://docs.ansible.com/ansible/latest/reference_appendices/special_variables.html)
