@@ -17,8 +17,10 @@ all:
       hosts:
         customAlias:
           ansible_host: "realHostName.myDomain.com" 
+          var_1: "Foo" 
         customAlias_2:
           ansible_host: 192.168.1.2 
+          var_2: 12345 
     group_2:
       hosts:
         "realHostName2.myDomain.com"
@@ -43,10 +45,12 @@ Output:
     "_meta": {
         "hostvars": {
             "customAlias": {
-                "ansible_host": "realHostName.myDomain.com"
+                "ansible_host": "realHostName.myDomain.com",
+                "var_1": "Foo"
             },
             "customAlias_2": {
-                "ansible_host": "192.168.1.2"
+                "ansible_host": "192.168.1.2",
+                "var_2": 12345
             },
             "realHostName2.myDomain.com": {}
         }

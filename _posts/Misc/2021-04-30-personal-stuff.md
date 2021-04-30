@@ -1,8 +1,8 @@
 ---
-title: Personal config
+title: Personal stuff
 date: 2021-04-30 7:30:00 HH:MM:SS +0100
-categories: [Personal, Config]
-tags: [personal, config]
+categories: [Personal]
+tags: [personal]
 ---
 
 ### Personal shortcuts
