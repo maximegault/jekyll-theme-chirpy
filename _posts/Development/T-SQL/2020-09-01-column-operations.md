@@ -43,3 +43,30 @@ ALTER TABLE [MySchema].[MyTable]
 ALTER COLUMN [MyColumn] [bit] NOT NULL
 GO
 ```
+
+### List a table/view columns
+
+Simpliest way:
+
+```sql
+SELECT * FROM INFORMATION_SCHEMA.COLUMNS
+```
+
+More complete way:
+
+```sql
+SELECT 
+    OBJECT_SCHEMA_NAME(COLUMNS.[object_id]) AS [Schema name],
+    OBJ.[name] AS [Table name], 
+    COLUMNS.[name] AS [Field name],
+    TYP.[name] AS [Data type],
+    TYP.[max_length] AS [Length size],
+    TYP.[precision] AS Precision
+FROM 
+    sys.columns AS COLUMNS 
+    INNER JOIN sys.objects AS OBJ ON OBJ.[object_id] = COLUMNS.[object_id]
+    LEFT JOIN sys.types AS TYP on TYP.[user_type_id] = COLUMNS.[user_type_id]   
+WHERE 
+    -- U for a table, V for a view
+    OBJ.[type] = 'V' 
+```

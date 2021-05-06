@@ -9,20 +9,52 @@ tags: [system, linux, ansible, yaml, tips, loop, loops]
 
 ### Simple loop
 
-### Get loop's index
+With the given example list:
+
+```yaml
+my_list:
+  - foo
+  - bar
+  - baz
+```
+
+Just use the `loop` keyword:
+
+```yaml
+- ansible.builtin.debug:
+    msg: item
+  loop: "{{ my_list }}"
+```
 
 ### Get loop's extended infos
 
-    - name: RHDS installation and customization
-      block:      
-      - name: Call to installation role
-        include_tasks: tasks/installation-and-customization.yml
-        loop: "{{ hostvars[inventory_hostname].instances }}"
-        vars:
-          instance_env: "{{ item.env }}"
-          instance_custo_type: "{{ item.custo_type }}"
-          instance_index_zero: "{{ ansible_loop.index0 }}"
-        loop_control:
-          extended: yes
+Just use the `loop_control` keyword.
+
+#### Change loop variable name
+
+```yaml
+- ansible.builtin.debug:
+    msg: list_item
+  loop: "{{ my_list }}"
+  loop_control:
+    loop_var: list_item
+```
+
+#### Get loop's indexes
+
+Use the `loop_control` keyword and set `extended` to true to get much more info.
+
+```yaml
+- include_tasks: taskThatUseLoopItem.yml
+  loop: "{{ my_list }}"
+  vars:
+    # Current loop index (O indexed)
+    loop_index_zero: "{{ ansible_loop.index0 }}"
+    # Current loop index (1 indexed)
+    loop_index_one: "{{ ansible_loop.index }}"
+  loop_control:
+    loop_var: list_item
+    extended: yes
+```
 
 [Ansible loops reference](https://docs.ansible.com/ansible/latest/user_guide/playbooks_loops.html)

@@ -1,5 +1,5 @@
 ---
-title: Ansible tips
+title: Ansible variables
 date: 2021-04-21 08:00:00 HH:MM:SS +0100
 categories: [System, Linux, Ansible, YAML]
 tags: [system, linux, ansible, yaml, tips]

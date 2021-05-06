@@ -5,6 +5,22 @@ categories: [System, Linux, Ansible, YAML]
 tags: [system, linux, ansible, yaml, tips]
 ---
 
+### Ad-hoc mode
+
+Used to test a module without having a playbook. Ie. with a ping on all hosts contained in the `inventory` file (`-m` is the argument for the module name):
+
+```shell
+ansible -i inventory all -m ping
+```
+
+Same thing with setup:
+
+```shell
+ansible -i inventory all -m ansible.builtin.setup
+```
+
+[Ad-hoc reference](https://docs.ansible.com/ansible/latest/user_guide/intro_adhoc.html)
+
 ### Format a pattern
 
 Example with the input values:
