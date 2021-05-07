@@ -19,13 +19,13 @@ my_list:
 ```
 
 Just use the `loop` keyword:
-
+<!-- {% raw %} -->
 ```yaml
 - ansible.builtin.debug:
     msg: item
-  loop: "{{{{ my_list }}}}"
+  loop: "{{ my_list }}"
 ```
-
+<!-- {% endraw %} -->
 ### Get loop's extended infos
 
 Just use the `loop_control` keyword.
