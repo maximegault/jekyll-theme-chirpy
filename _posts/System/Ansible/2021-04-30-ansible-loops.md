@@ -23,7 +23,7 @@ Just use the `loop` keyword:
 ```yaml
 - ansible.builtin.debug:
     msg: item
-  loop: "{{ my_list }}"
+  loop: "{{{{ my_list }}}}"
 ```
 
 ### Get loop's extended infos
