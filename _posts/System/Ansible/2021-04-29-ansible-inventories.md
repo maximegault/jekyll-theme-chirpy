@@ -94,3 +94,34 @@ Output:
   |  |--realHostName2.myDomain.com
   |--@ungrouped:
 ```
+
+## Inventories to use in local
+
+### In INI format
+
+Most basic:
+
+```ini
+localhost ansible_connection=local
+```
+
+### In YAML format
+
+The same one in YAML:
+
+```yaml
+all:
+  children:
+    ungrouped:
+      hosts:
+        localhost:
+          ansible_connection: local
+```
+
+### Convert INI inventory in YAML one
+
+The YAML seems more easy to me to manage complex structures:
+
+```shell
+ansible-inventory -i inventory_ini -y --list > inventory_yaml
+```

@@ -30,11 +30,11 @@ server_pattern: "ldap://%s:%s"
 server_uri: "myServer.com"
 server_port: 389
 ```
-
+<!-- {% raw %} -->
 ```yaml
 final_server_uri: "{{ server_pattern | format(server_uri, server_port) }}"
 ```
-
+<!-- {% endraw %} -->
 It will give:
 
 ```text

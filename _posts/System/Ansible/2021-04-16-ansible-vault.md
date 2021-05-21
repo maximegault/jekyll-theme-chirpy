@@ -24,7 +24,7 @@ To use it in AWX:
 
 To encrypt a secret, go back to the machine that has Ansible installed:
 
-* create an `~/.ansible.cfg` file that contains the mapping encryptionKeyAlias@encryptionKeyFile, ie. `myEncryptionKey@~/ansible/.vault_myEncryptionKey`:
+* create an `~/ansible.cfg` file that contains the mapping encryptionKeyAlias@encryptionKeyFile, ie. `myEncryptionKey@~/ansible/.vault_myEncryptionKey`:
 
     ```ini
     # Entries encryptionKeyAlias@encryptionKeyFile has to be separated by comas

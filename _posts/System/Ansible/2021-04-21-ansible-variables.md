@@ -27,16 +27,25 @@ myHost_2:
 ```
 
 Dynamic access in a playbook through the host name with `vars` dictionary:
-
+<!-- {% raw %} -->
 ```yaml
 # Looping on hosts myHost_1 and myHost_2, it will contain "Foo" then "Bar"
 myDynamicVariable: "{{ vars[inventory_hostname_short].unique_variable }}" 
 ```
-
+<!-- {% endraw %} -->
 ### Access to a dynamic vars_files at the playbook level
 
 Warning the facts are not accessible yet:
-
+<!-- {% raw %} -->
 ```yaml
   vars_files: "./vars/{{ inventory_hostname_short }}.yml"
+```
+<!-- {% endraw %} -->
+### Set a fact as `undefined`
+
+Just leave it empty:
+
+```yaml
+vars:
+  undefined_fact_trick:
 ```

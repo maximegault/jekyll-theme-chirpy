@@ -31,7 +31,7 @@ Just use the `loop` keyword:
 Just use the `loop_control` keyword.
 
 #### Change loop variable name
-
+<!-- {% raw %} -->
 ```yaml
 - ansible.builtin.debug:
     msg: list_item
@@ -39,11 +39,11 @@ Just use the `loop_control` keyword.
   loop_control:
     loop_var: list_item
 ```
-
+<!-- {% endraw %} -->
 #### Get loop's indexes
 
 Use the `loop_control` keyword and set `extended` to true to get much more info.
-
+<!-- {% raw %} -->
 ```yaml
 - include_tasks: taskThatUseLoopItem.yml
   loop: "{{ my_list }}"
@@ -56,5 +56,5 @@ Use the `loop_control` keyword and set `extended` to true to get much more info.
     loop_var: list_item
     extended: yes
 ```
-
+<!-- {% endraw %} -->
 [Ansible loops reference](https://docs.ansible.com/ansible/latest/user_guide/playbooks_loops.html)
