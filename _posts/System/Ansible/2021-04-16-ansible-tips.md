@@ -41,6 +41,32 @@ It will give:
 ldap://myServer.com:389
 ```
 
+### Pad left an int with leading zeros
+
+With two variables, one string and one int:
+
+```yaml
+var_int: 4
+var_string: "5"
+```
+
+Two leading zeros examples with [format](https://jinja.palletsprojects.com/en/2.9.x/templates/#format) template:
+<!-- {% raw %} -->
+```yaml
+- name: Pads left an int value
+  ansible.builtin.set_fact:
+    final_var_1: "{{ '%02d' | format(var_int) }}"
+    # Here we first cast the var_string into an int in order to add the two variables
+    final_var_2: "{{ '%02d' | format(var_string | int + var_int) }}"
+```
+<!-- {% endraw %} -->
+Final values:
+
+```text
+final_var_1 = "04"
+final_var_2 = "09"
+```
+
 ### Classic facts
 
 On a target host called `myMachine.myDomain.com`:
