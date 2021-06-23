@@ -34,7 +34,7 @@ To encrypt a secret, go back to the machine that has Ansible installed:
 
 * create an `~/encrypt.sh` script that will help to encrypt a secret and create a ready-to-use Ansible variable:
 
-    ```shell
+    ```bash
     #/bin/bash
     read -p "Ansible variable name:" ansible_variable_name
     echo
@@ -47,7 +47,7 @@ To encrypt a secret, go back to the machine that has Ansible installed:
 
     Execute this script:
 
-    ```shell
+    ```bash
     Ansible variable name:test_variable
     Secret to encrypt:
     Vault encryption key:myEncryptionKey

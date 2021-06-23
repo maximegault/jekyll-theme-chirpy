@@ -11,7 +11,7 @@ tags: [development, git, gitlab, github]
 
 Simply create a new branch and push it:
 
-```shell
+```bash
 git checkout -b myCustomBranch
 ```
 
@@ -19,16 +19,24 @@ git checkout -b myCustomBranch
 
 Simply create a new branch and push it directly to the remote repository:
 
-```shell
+```bash
 git checkout -b myCustomBranch
 git push -u origin HEAD
+```
+
+### Get a remote branch
+
+We have a cloned a repository, and so only its `master` branch. It contains ie. a `develop` branch and we need it locally. To get it:
+
+```bash
+git checkout develop
 ```
 
 ## List branches
 
 ### List local branches only
 
-```shell
+```bash
 git branch
   master
 * myCustomBranch
@@ -38,7 +46,7 @@ git branch
 
 With `-a` argument:
 
-```shell
+```bash
 git branch -a
   master
 * myCustomBranch
@@ -51,7 +59,7 @@ git branch -a
 
 The `-v` argument gives the commit the branch is on:
 
-```shell
+```bash
 git branch -v
   master            a0ca238 Simple fix
 * myCustomBranch    a0ca238 Simple fix
@@ -61,7 +69,7 @@ git branch -v
 
 The `-vv` argument gives the commit the branch is on and the corresponding remote branch:
 
-```shell
+```bash
 git branch -vv
   master            a0ca238 [origin/master] Simple fix
 * myCustomBranch    a0ca238 [origin/myCustomBranch] Simple fix
@@ -71,7 +79,7 @@ git branch -vv
 
 With the combination of the `-avv` arguments:
 
-```shell
+```bash
 git branch -avv
   master                            a0ca238 [origin/master] Simple fix
 * myCustomBranch                    a0ca238 [origin/myCustomBranch] Simple fix
@@ -84,12 +92,12 @@ git branch -avv
 
 ### Delete a local branch
 
-```shell
+```bash
 git branch -d myCustomBranch
 ```
 
 ### Delete a remote branch
 
-```shell
+```bash
 git push origin --delete myCustomBranch
 ```

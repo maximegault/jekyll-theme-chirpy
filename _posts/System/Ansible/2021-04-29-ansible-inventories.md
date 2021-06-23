@@ -34,7 +34,7 @@ all:
 
 Examples with the one given in YAML. To have a list:
 
-```shell
+```bash
 ansible-inventory -i inventory --list
 ```
 
@@ -79,7 +79,7 @@ Output:
 
 To have a simplier graph:
 
-```shell
+```bash
 ansible-inventory -i inventory --graph
 ```
 
@@ -122,7 +122,7 @@ all:
 
 The YAML seems more easy to me to manage complex structures:
 
-```shell
+```bash
 ansible-inventory -i inventory_ini -y --list > inventory_yaml
 ```
 

@@ -9,7 +9,7 @@ tags: [system, linux, ansible, yaml, tips]
 
 To see Ansible configuration, use the `ansible-config` utility, ie.:
 
-```shell
+```bash
 ansible-config list
 ```
 
@@ -64,7 +64,7 @@ library        = /usr/share/my_modules/:~user/ansible_custom/library
 
 If we execute a playbook in verbose mode (`-vvv`), we can see:
 
-```shell
+```bash
 ansible-playbook -i hosts.yaml playbook.yml -vvv
 ```
 

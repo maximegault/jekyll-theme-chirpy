@@ -23,19 +23,19 @@ Windows: `%USERPROFILE%`
 
 We can add the `--show-origin` argument to see the file's location:
 
-```shell
+```bash
 git config --list
 ```
 
 List the global values only:
 
-```shell
+```bash
 git config --global --list
 ```
 
 List the local values only:
 
-```shell
+```bash
 git config --local --list
 ```
 
@@ -43,7 +43,7 @@ git config --local --list
 
 Example adding a user name (name is a property of the user's section) in the global section:
 
-```shell
+```bash
 git config --global user.name Maxime Gault
 ```
 
@@ -51,7 +51,7 @@ git config --global user.name Maxime Gault
 
 A global one:
 
-```shell
+```bash
 git config --global --unset http.sslBackend
 ```
 

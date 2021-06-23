@@ -9,13 +9,13 @@ tags: [system, linux, ansible, yaml, tips]
 
 Used to test a module without having a playbook. Ie. with a ping on all hosts contained in the `inventory` file (`-m` is the argument for the module name):
 
-```shell
+```bash
 ansible -i inventory all -m ping
 ```
 
 Same thing with setup:
 
-```shell
+```bash
 ansible -i inventory all -m ansible.builtin.setup
 ```
 

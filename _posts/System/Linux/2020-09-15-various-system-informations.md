@@ -9,7 +9,7 @@ tags: [system, linux, shell, version, python]
 
 A way:
 
-```shell
+```bash
 cat /etc/*-release
 ```
 
@@ -31,7 +31,7 @@ BUG_REPORT_URL="https://bugzilla.redhat.com/"
 
 Another way:
 
-```shell
+```bash
 hostnamectl
 ```
 
@@ -54,7 +54,7 @@ Output example:
 
 A way:
 
-```shell
+```bash
 python --version
 ```
 
@@ -66,7 +66,7 @@ python 2.0.0
 
 Another way:
 
-```shell
+```bash
 python -V
 ```
 
